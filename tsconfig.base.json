@@ -1,0 +1,34 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@nx-stencil/core": ["dist/libs/core"],
+      "@nx-stencil/core-components": ["dist/libs/core-components"],
+      "@nx-stencil/core-components-angular": [
+        "libs/core-components-angular/src/index.ts"
+      ],
+      "@nx-stencil/core-components/*": [
+        "dist/libs/core-components/dist/components/*"
+      ],
+      "@nx-stencil/core-components/loader": [
+        "dist/libs/core-components/loader"
+      ],
+      "@nx-stencil/core/*": ["dist/libs/core/dist/components/*"],
+      "@nx-stencil/core/loader": ["dist/libs/core/loader"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
